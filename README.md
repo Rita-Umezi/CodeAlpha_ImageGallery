@@ -4,7 +4,7 @@ A modern, fully responsive image gallery with advanced JavaScript functionality,
 
 ## Features
 
-### ✨ Core Features
+### Core Features
 
 - **Responsive Grid Layout**: Auto-fills responsive grid that adapts to screen sizes (1400px → 480px)
 - **Lightbox View**: Click any image to open a full-screen lightbox modal
