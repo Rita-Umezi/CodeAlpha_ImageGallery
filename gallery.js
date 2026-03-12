@@ -99,6 +99,28 @@ const filterButtons = document.querySelectorAll('.filter-btn');
 function initGallery() {
     renderGallery();
     setupEventListeners();
+}
+
+// Setup Event Listeners
+function setupEventListeners() {
+    // Filter buttons
+    filterButtons.forEach(button => {
+        button.addEventListener('click', handleFilter);
+    });
+
+    // Search input
+    searchInput.addEventListener('input', handleSearch);
+
+    // Lightbox events
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightboxPrev.addEventListener('click', previousImage);
+    lightboxNext.addEventListener('click', nextImage);
+    lightboxBg.addEventListener('click', closeLightbox);
+
+    // Keyboard navigation
+    document.addEventListener('keydown', handleKeyPress);
+}
+    setupEventListeners();
     updateTotalImages();
 }
 
