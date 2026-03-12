@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <header class="gallery-header">
+        <h1>Photo Gallery</h1>
+        <div class="filters" id="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="city">Architecture</button>
+            <button class="filter-btn" data-filter="tech">Tech</button>
+        </div>
+    </header>
+
+    <!-- Gallery Grid -->
+    <div class="gallery-grid" id="gallery-grid">
+        <!-- Images will be injected here by JavaScript -->
+    </div>
+</div>
+
+<!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox">
+    <span class="close-btn">&times;</span>
+    <button class="nav-btn prev-btn">&#10094;</button>
+    <img class="lightbox-content" id="lightbox-img" src="" alt="Lightbox Image">
+    <div id="caption" class="caption"></div>
+    <button class="nav-btn next-btn">&#10095;</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
